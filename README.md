@@ -2,6 +2,9 @@
 
 > A docker image for the Gophish web application
 
+[![](https://badge.imagelayers.io/matteoggl/gophish:latest.svg)](https://imagelayers.io/?images=matteoggl/gophish:latest 'Get your own badge on imagelayers.io')
+
+
 ## Description
 
 This is a quick way to deploy a [gophish](https://github.com/gophish/gophish) installation on your local machine.
