@@ -6,7 +6,7 @@
 
 This is a quick way to deploy a [gophish](https://github.com/gophish/gophish) installation on your local machine.
 
-Tee version running is 0.1.1 on the official Debian Jessie container.
+The version running is 0.1.1 on the official Debian Jessie container.
 
 ## Usage
 
