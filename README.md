@@ -9,7 +9,7 @@
 
 This is a quick way to deploy a [gophish](https://github.com/gophish/gophish) installation on your local machine.
 
-The version running is 0.1.1 on the official Debian Jessie container.
+The version running is 0.1.1 on the official Debian Jessie container. Latest stable image version is 0.4.
 
 ## Usage
 
@@ -33,3 +33,13 @@ git clone https://github.com/matteoggl/docker-gophish
 cd docker-gophish
 docker build -t "yourname/gophish:yourtag" .
 ```
+
+## Contributing
+
+Issues and pull requests are gladly accepted!
+
+## gophish license
+
+gophish - Open-Source Phishing Framework
+The MIT License (MIT)
+Copyright (c) 2013 - 2016 Jordan Wright
