@@ -2,7 +2,7 @@
 
 > A docker image for the Gophish web application
 
-[![](https://badge.imagelayers.io/matteoggl/gophish:latest.svg)](https://imagelayers.io/?images=matteoggl/gophish:latest 'Get your own badge on imagelayers.io')
+[![ImageLayers Size](https://img.shields.io/imagelayers/image-size/matteoggl/gophish/latest.svg?style=flat-square)](http://hub.docker.com/r/matteoggl/gophish) [![Docker Pulls](https://img.shields.io/docker/pulls/matteoggl/gophish.svg?style=flat-square)](https://hub.docker.com/r/matteoggl/gophish)
 
 
 ## Description
