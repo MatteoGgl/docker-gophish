@@ -2,13 +2,14 @@ FROM debian:jessie
 MAINTAINER Matteo Guglielmetti <matteo.guglielmetti@hotmail.it>
 
 RUN apt-get update && \
-apt-get install -y \
+apt-get install --no-install-recommends -y \
+ca-certificates \
 wget && \
 apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /opt
-RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.1.1/gophish_linux_64bit.tar.gz
-RUN tar -xf gophish_linux_64bit.tar.gz && \
+RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.1.1/gophish_linux_64bit.tar.gz && \
+tar -xf gophish_linux_64bit.tar.gz && \
 rm -f gophish_linux_64bit.tar.gz
 
 WORKDIR /opt/gophish_linux_amd64
