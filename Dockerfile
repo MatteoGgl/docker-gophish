@@ -8,7 +8,7 @@ wget && \
 apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /opt
-RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.1.1/gophish_linux_64bit.tar.gz && \
+RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.1.2/gophish_linux_64bit.tar.gz && \
 tar -xf gophish_linux_64bit.tar.gz && \
 rm -f gophish_linux_64bit.tar.gz
 
