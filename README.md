@@ -9,7 +9,7 @@
 
 This is a quick way to deploy a [gophish](https://github.com/gophish/gophish) installation on your local machine.
 
-The version running is 0.1.2 on the official Debian Jessie container. Latest stable image version is 0.6.
+The latest version 0.1.2 is running on the official Debian Jessie container. Latest stable image version is 0.6.
 
 ## Usage
 
@@ -33,6 +33,12 @@ git clone https://github.com/matteoggl/docker-gophish
 cd docker-gophish
 docker build -t "yourname/gophish:yourtag" .
 ```
+
+#### Different gophish version
+
+You can run a different version of gophish by simply applying the corresponding tag.
+
+e.g. `matteoggl/gophish:gophish0.1.1`
 
 ## Contributing
 
