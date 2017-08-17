@@ -9,11 +9,11 @@ wget && \
 apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /opt
-RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.1.2/gophish_linux_64bit.zip && \
-unzip gophish_linux_64bit.zip && \
-rm -f gophish_linux_64bit.zip
+RUN wget -nv https://github.com/gophish/gophish/releases/download/v0.3.0/gophish-v0.3-linux-64bit.zip && \
+unzip gophish-v0.3-linux-64bit.zip && \
+rm -f gophish-v0.3-linux-64bit.zip
 
-WORKDIR /opt/gophish_linux_64bit
+WORKDIR /opt/gophish-v0.3-linux-64bit
 RUN sed -i "s|127.0.0.1|0.0.0.0|g" config.json && \
 chmod +x gophish
 
