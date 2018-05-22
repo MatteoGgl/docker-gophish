@@ -9,7 +9,7 @@
 
 This is a quick way to deploy a [gophish](https://github.com/gophish/gophish) installation on your local machine.
 
-The latest version 0.4.0 is running on the official Debian Jessie container. Latest stable image version is 0.4.
+The latest version 0.6.0 is running on the official Debian Jessie container. Latest stable image version is 0.6.0.
 
 ## Usage
 
@@ -24,7 +24,7 @@ To run as a daemon:
 docker run -d --name gophish -p 3333:3333 -p 8083:80 matteoggl/gophish
 ```
 
-In your browser, go to ```http://your-docker-machine-ip:3333```
+In your browser, go to ```https://your-docker-machine-ip:3333```
 
 #### Building the image
 
@@ -46,6 +46,6 @@ Issues and pull requests are gladly accepted!
 
 ## gophish license
 
-gophish - Open-Source Phishing Framework
+Gophish - Open-Source Phishing Framework
 The MIT License (MIT)
-Copyright (c) 2013 - 2016 Jordan Wright
+Copyright (c) 2013 - 2018 Jordan Wright
