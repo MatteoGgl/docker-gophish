@@ -16,12 +16,18 @@ The latest version 0.6.0 is running on the official Debian Jessie container. Lat
 #### Quickstart
 
 ```bash
-docker run -ti --name gophish -p 3333:3333 -p 8083:80 matteoggl/gophish
+docker run -ti --name gophish -p 3333:3333 -p 8083:9090 matteoggl/gophish
 ```
 To run as a daemon:
 
 ```bash
-docker run -d --name gophish -p 3333:3333 -p 8083:80 matteoggl/gophish
+docker run -d --name gophish -p 3333:3333 -p 8083:9090 matteoggl/gophish
+```
+
+To save data:
+```bash
+touch gophish.db
+docker run -d --name gophish -p 3333:3333 -p 8083:9090 -v $PWD/gophish.db:/opt/gophish/gophish.db matteoggl/gophish
 ```
 
 In your browser, go to ```https://your-docker-machine-ip:3333```
@@ -48,4 +54,4 @@ Issues and pull requests are gladly accepted!
 
 Gophish - Open-Source Phishing Framework
 The MIT License (MIT)
-Copyright (c) 2013 - 2018 Jordan Wright
+Copyright (c) 2013 - 2019 Jordan Wright
